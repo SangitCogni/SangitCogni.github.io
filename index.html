@@ -290,6 +290,15 @@ a{color:inherit}
 .qcard p{font-size:var(--fs-1);color:var(--muted);line-height:1.65}
 .qcard span{display:block;margin-top:var(--s3);font-size:var(--fs-0);color:var(--faint)}
 
+/* ── appreciations ── */
+.ap-group{margin-top:var(--s7)}
+.ap-group > h3{font-size:var(--fs-1);font-weight:500;color:var(--accent);
+  padding-bottom:var(--s2);transition:color .55s var(--ease)}
+.ap-list{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s5) var(--s6)}
+.ap{border-top:1px solid var(--line);padding-top:var(--s3)}
+.ap p{font-size:var(--fs-1);line-height:1.6;text-wrap:pretty}
+.ap span{display:block;margin-top:var(--s2);font-size:var(--fs-0);color:var(--faint);line-height:1.5}
+
 /* ═══════════════ capabilities + credentials ═══════════════ */
 .caps{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s7) var(--s6)}
 .cap h3{font-size:var(--fs-1);font-weight:500}
@@ -394,6 +403,8 @@ footer::before{content:"";display:block;height:1px;background:var(--line);margin
   .charts{gap:var(--s7)}
   .caps,.cred{grid-template-columns:1fr;gap:var(--s6)}
   .quote-more{grid-template-columns:1fr;gap:var(--s5);margin-top:var(--s6)}
+  .ap-list{grid-template-columns:1fr;gap:var(--s5)}
+  .ap-group{margin-top:var(--s6)}
   .foot-cols{grid-template-columns:1fr}
   .foot-links{text-align:left}
   footer{margin-top:var(--s8)}
@@ -451,7 +462,7 @@ footer::before{content:"";display:block;height:1px;background:var(--line);margin
     <nav class="rail-nav" aria-label="Sections">
       <a href="#numbers">Numbers</a>
       <a href="#record">Record</a>
-      <a href="#voices">Testimonial</a>
+      <a href="#voices">Appreciations</a>
       <a href="#capabilities">Capabilities</a>
       <a href="#credentials">Credentials</a>
       <button class="ghost" id="print">Save as PDF</button>
@@ -506,7 +517,7 @@ footer::before{content:"";display:block;height:1px;background:var(--line);margin
         <div class="marg-notes">
           <p class="marg-note on" data-note="bd">Output peaked in <b>2024</b>: fifteen business development contributions and three formal responses. 2026 already carries five formal responses, the most of any year, with five months still to run.</p>
           <p class="marg-note" data-note="stories">The line moves the right way. 150+ stories across twelve months of 2025, then <b>250+ in seven months</b> of 2026, in a product domain that was unfamiliar at the start of it. The first fifty of those landed inside two months.</p>
-          <p class="marg-note" data-note="split">Nineteen of the thirty entries count toward <b>both</b> lenses rather than one. Only two are delivery alone, and nine advisory alone. That overlap is the argument for a hybrid profile.</p>
+          <p class="marg-note" data-note="split">Twenty of the thirty-two entries count toward <b>both</b> lenses rather than one. Only three are delivery alone, and nine advisory alone. That overlap is the argument for a hybrid profile.</p>
           <p class="marg-note" data-note="map">Delivery, pursuits, research and pharmacy each appear in <b>every year</b>. What changes is weight. AI goes from absent in 2023 to the largest single band in 2026, and pharmacy has grown every year, while interoperability work clusters in the first two.</p>
         </div>
       </div>
@@ -544,13 +555,13 @@ footer::before{content:"";display:block;height:1px;background:var(--line);margin
   <div class="wrap sec-grid">
     <div class="sec-head">
       <h2>Work record</h2>
-      <p>Thirty entries from August 2023 to July 2026. Filter by year or type, or search a capability. Clients are described by sector rather than named.</p>
+      <p>Thirty-two entries from August 2023 to August 2026. Filter by year or type, or search a capability. Clients are described by sector rather than named.</p>
       <span class="draw"></span>
       <div class="marg">
         <span class="marg-yr" id="recYear"></span>
         <div class="marg-notes">
-          <p class="marg-note" data-note="y2026">Ten entries by July, the busiest year on record. <b>250+ user stories</b> in a new domain, product ownership of a data and AI team, five formal pursuit responses, a <b>first published article</b> under my own byline, and an AI workshop hosted for practitioners.</p>
-          <p class="marg-note" data-note="y2025">Two clusters, six products. <b>150+ user stories</b> over two clusters and six products, proxy product ownership of a clinical application, and eighteen client deliverables on top.</p>
+          <p class="marg-note" data-note="y2026">Ten entries by July, the busiest year on record. <b>250+ user stories</b> in a new domain, product ownership of a data and AI team, five formal pursuit responses, product specifications across three clusters, a <b>first published article</b> under my own byline, and an AI workshop hosted for practitioners.</p>
+          <p class="marg-note" data-note="y2025">Two clusters, six products, <b>150+ user stories</b>, proxy product ownership of a clinical application, and eighteen client deliverables on top. Also the year I <b>shipped a product myself</b> at a hackathon, front end through payment flow.</p>
           <p class="marg-note" data-note="y2024">The broadest year, nine entries. A <b>generative AI product</b> taken from requirements through testing, SAFe and Scrum certification, a cloud migration award, and fifteen business development contributions.</p>
           <p class="marg-note" data-note="y2023">Five months, August to December. A first engagement mapping value streams, and market research spanning <b>four insurance markets</b> across the UK and India.</p>
         </div>
@@ -579,23 +590,94 @@ footer::before{content:"";display:block;height:1px;background:var(--line);margin
 <section class="sec" id="voices">
   <div class="wrap sec-grid">
     <div class="sec-head">
-      <h2>What the delivery manager says</h2>
-      <p>Recognition received in 2026 for product ownership and requirements work across two teams.</p>
+      <h2>Appreciations</h2>
+      <p>Nineteen recorded between 2024 and 2026, from pursuit teams, delivery leads and clients. Names removed, clients described by sector.</p>
       <span class="draw"></span>
       <div class="marg">
         <div class="marg-notes">
           <p class="marg-note on" data-note="q1">Written by the <b>delivery manager</b> on the engagement, covering work across two teams rather than only the one I own.</p>
-          <p class="marg-note" data-note="q2">One theme recurs throughout: <b>ambiguity removed before delivery starts</b>. It is the part of the role that rarely shows up in a metric.</p>
+          <p class="marg-note" data-note="q2">The same phrase keeps appearing in notes written by different people about different engagements: <b>turnaround</b>. Three separate pursuits, three separate authors, the same observation about work arriving fast and arriving finished.</p>
+          <p class="marg-note" data-note="q3">The pattern here is <b>scope creep in the useful direction</b>. On a five-area research brief I took a sixth. On an estimation task I built the method rather than filling in the template.</p>
+          <p class="marg-note" data-note="q4">The formal end of the same record: a <b>Cheers Award</b>, a delivery award, and appreciation from a client forwarded internally. Recognition for presenting, not only for producing.</p>
         </div>
       </div>
     </div>
     <div>
       <p class="quote-lead" data-reveal data-note-key="q1">“What stands out most is his ability to <b>get things done</b>. Regardless of the challenge or complexity involved, Sangit takes ownership, follows through on commitments, and works collaboratively with stakeholders to drive outcomes.”</p>
       <p class="attrib" data-reveal>Delivery Manager, provider-facing care cluster</p>
-      <div class="quote-more" data-note-key="q2">
-        <div class="qcard" data-reveal><p>“One of Sangit's greatest strengths is his exceptional attention to detail.”</p><span>On requirements quality</span></div>
-        <div class="qcard" data-reveal><p>“His thorough approach helps reduce ambiguity, improve team alignment, and enables smoother delivery outcomes.”</p><span>On impact to delivery</span></div>
-        <div class="qcard" data-reveal><p>“He consistently produces high-quality user stories, requirements, and supporting documentation that provide clarity and direction for the team.”</p><span>On refinement across both teams</span></div>
+
+      <div class="ap-group" data-note-key="q2">
+        <h3 data-reveal>On turnaround under compression</h3>
+        <div class="ap-list">
+          <div class="ap" data-reveal>
+            <p>“Well structured and quality, considering quick turnaround time.”</p>
+            <span>Pharmaceutical distribution and healthcare services RFP, 2026</span>
+          </div>
+          <div class="ap" data-reveal>
+            <p>“Very quick to pick up the work and delivered with excellent turn around time. The slides delivered were of high quality.”</p>
+            <span>Managed care data architecture RFP, 2026</span>
+          </div>
+          <div class="ap" data-reveal>
+            <p>“Excellent research and helped creating the deck on a futuristic audit in the Rx area, done in the very short turn around time.”</p>
+            <span>Pharmacy benefit audit point of view, 2026</span>
+          </div>
+          <div class="ap" data-reveal>
+            <p>“Appreciate you spending extra hours in researching to create this PoV, managing your BAU.”</p>
+            <span>Provider software point of view, 2026</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ap-group" data-note-key="q3">
+        <h3 data-reveal>On research that went wider than the brief</h3>
+        <div class="ap-list">
+          <div class="ap" data-reveal>
+            <p>“Required extensive research in five different areas. He not only delivered the use cases in the area he was assigned, he also picked up the responsibilities of another area.”</p>
+            <span>Regional health plan pharmacy operations AI use cases, 2026</span>
+          </div>
+          <div class="ap" data-reveal>
+            <p>“Instrumental in researching and finding current capabilities in prior authorisation, member experience and formulary management. This deck was presented to the Rx VP and the content was very much appreciated.”</p>
+            <span>National pharmacy benefit manager point of view, 2026</span>
+          </div>
+          <div class="ap" data-reveal>
+            <p>“His analytical mindset helped us understand the summary file and come up with a strategy to provide an estimate,” later presented to the client.</p>
+            <span>NCPDP D0 to F6 migration estimate, 2026</span>
+          </div>
+          <div class="ap" data-reveal>
+            <p>“Valuable contributions by supporting the development of the future-state POV and creating content for the final presentation.”</p>
+            <span>Retail pharmacy and payer modernisation RFI, 2026</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ap-group" data-note-key="q4">
+        <h3 data-reveal>On ownership, delivery and presenting</h3>
+        <div class="ap-list">
+          <div class="ap" data-reveal>
+            <p>“Took control of a new product and cluster very quickly.”</p>
+            <span>Provider-facing care applications, product specifications, 2026</span>
+          </div>
+          <div class="ap" data-reveal>
+            <p>“A job thoroughly and well done.”</p>
+            <span>On 500+ stories, release manuals and the move from analyst to product owner, 2026</span>
+          </div>
+          <div class="ap" data-reveal>
+            <p>“This was very useful for the client, well done.”</p>
+            <span>Production release notes reaching clinicians and nurses, 2026</span>
+          </div>
+          <div class="ap" data-reveal>
+            <p>“He presented very well in a calm, well-paced manner. He answered questions the technical team asked well and where he couldn't, showed humility.”</p>
+            <span>Interoperability capability session, 2024</span>
+          </div>
+          <div class="ap" data-reveal>
+            <p>“An awesome session, refreshingly different content and presentation.”</p>
+            <span>Practice session, 2025</span>
+          </div>
+          <div class="ap" data-reveal>
+            <p>“Exceptional work in his role as Business Analyst across three products… the value you bring to our projects.”</p>
+            <span>Cheers Award, 2025</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -632,6 +714,7 @@ footer::before{content:"";display:block;height:1px;background:var(--line);margin
         <div class="row" data-reveal><div><div class="t">Product Owner / Product Manager</div><div class="s">Scaled Agile, SAFe POPM</div></div><div class="d">2024</div></div>
         <div class="row" data-reveal><div><div class="t">Certified Scrum Product Owner</div><div class="s">Scrum Alliance</div></div><div class="d">2024</div></div>
         <div class="row" data-reveal><div><div class="t">Managed Healthcare Professional</div><div class="s">AHIP, AHM 250</div></div><div class="d">2023</div></div>
+        <div class="row" data-reveal><div><div class="t">Cheers Award</div><div class="s">Business analysis across three clinical products</div></div><div class="d">2025</div></div>
         <div class="row" data-reveal><div><div class="t">Dream Team Award</div><div class="s">Delivery performance on a health cloud migration</div></div><div class="d">2024</div></div>
         <p class="note" data-reveal>Training covers prompt engineering and generative AI, Microsoft AI Strategy, agentic AI orchestration, SQL, HL7 and health IT interoperability, government programs in pharmacy benefits, business analysis and design thinking.</p>
       </div>
@@ -747,6 +830,11 @@ const WORK = [
        "Produced a pharmacy RFP and value-based care POV for a government programs plan, member portal work for an integrated payer-provider system, a PBM-focused quarterly business review for a regional Blues plan, and a pharmacy transition assessment for a national retailer.",
        "Completed <b>Provider Value Stream Mapping (L1 and L2)</b>, pharmacy benefit trend analysis, a conversational AI POV and a provider software POV.",
        "Prepared an account overview deck for a client leadership visit."] },
+  { y:2025, t:"HealthIQ, a preventive health scoring app", cl:"Built solo at a Cognizant hackathon", c:1, p:2,
+    tags:["delivery","ai"], k:"healthiq preventive health risk score hackathon lovable react typescript supabase stripe openai freemium premium subscription full stack shipped built solo side project vibe coding",
+    d:["Designed and built a <b>mobile-friendly wellness app</b> that scores preventive health risk from lifestyle, diet, sleep, activity, mental wellness and basic vitals, then returns a risk category, a seven-day plan and AI-generated improvement tips.",
+       "Full stack rather than a prototype: React and TypeScript front end, Supabase for authentication, database and serverless functions, an <b>OpenAI-backed analysis layer</b> with a browser-local model and rule-based scoring as fallbacks, and <b>Stripe</b> for freemium-to-premium subscriptions.",
+       "Built with Lovable during Cognizant's hackathon, July to August 2025, covering the whole path from concept to working payment flow."] },
   { y:2025, t:"Newsletter authorship and editorial review", cl:"Practice research", c:2, p:0,
     tags:["research"], k:"newsletter recent market developments us healthcare innovation startup market barometer risk compliance effectiveness editorial reviewer healthcare startup investments",
     d:["Wrote for three practice newsletter editions on recent market developments and major developments in US healthcare.",
@@ -767,6 +855,11 @@ const WORK = [
   { y:2026, t:"Microsoft Certified: AI Business Professional", cl:"Professional", c:1, p:1,
     tags:["ai"], k:"microsoft certified ai business professional certification vendor credential july 2026",
     d:["Certified in July 2026, adding a vendor-recognised AI credential alongside SAFe POPM, CSPO and AHM 250."] },
+  { y:2026, t:"Product specifications and release documentation", cl:"Provider-facing care applications", c:0, p:2,
+    tags:["delivery"], k:"functional requirements documents frd epic detailing product specifications release manuals production release notes clinicians nurses technical writing three clusters ten releases",
+    d:["Wrote the <b>functional requirements documents and epic detailing</b> for a new range of provider-facing products, taking on the product and cluster at short notice.",
+       "Documented <b>10+ end-to-end product specifications across three clusters</b> and produced three release manuals.",
+       "Prepared production release notes supporting <b>10+ releases</b> that reach clinicians and nurses directly, described by the cluster lead as very useful for the client."] },
   { y:2026, t:"Three high-value pursuits", cl:"National health services · managed care · retail pharmacy group", c:2, p:0,
     tags:["pursuit"], k:"rfp rfi data architecture modernisation active pipeline high value pursuits national health services managed care retail pharmacy",
     d:["Supporting three active pursuits: an <b>RFP for a national health services organisation</b>, a <b>data architecture RFP</b> for a managed care organisation and a <b>modernisation RFI</b> for a retail pharmacy and payer group."] },
@@ -826,7 +919,7 @@ const LENSES = {
   },
   product:{
     role:"Product Owner · health-tech, data and AI products · Aug 2023 to present",
-    pitch:"<b>Product Owner</b> for a data and AI team, supporting a second AI team alongside it. <b>600+ user stories</b> shipped across four clusters and 10+ products in a SAFe environment, and a generative AI product taken from requirements through functional testing.",
+    pitch:"<b>Product Owner</b> for a data and AI team, supporting a second AI team alongside it. <b>600+ user stories</b> shipped across four clusters and 10+ products in a SAFe environment, a generative AI product taken from requirements through functional testing, and a full-stack health scoring app I built and shipped myself.",
     metrics:[["600+","user stories delivered"],["250+","written this year alone"],["10+","products across 4 clusters"],["4","certifications incl. Microsoft AI"]],
     capNote:"What a product team gets: someone who writes the backlog, runs the refinement and tests what ships.",
     caps:[
